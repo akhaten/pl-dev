@@ -12,7 +12,7 @@ Cloner ce repository avec la commande `git clone`
 
 ## Contenu du dossier :
 - un fichier `Dockerfile` contenant la configuration minimale d'un container pouvant executer les commandes `scip` et `zimpl`.
-- un dossier `workspace` où vous pouvez placer les tps d'algorithmique avancée. C'est votre espace de travail. Il est partagé avec le containeur. 
+- un dossier `workspace` où vous pouvez placer les tps d'algorithmique avancée. C'est votre espace de travail. Il est partagé avec le container. 
 - un `.deb` correspondant à l'installateur `scip` et `zimpl` téléchargé au lien suivant : https://www.scipopt.org/index.php#download
 
 ---
@@ -21,14 +21,14 @@ Cloner ce repository avec la commande `git clone`
 
 ---
 
-### Créer le containeur :
+### Créer le container :
 ```
 user@user$ cd pl-dev
 user@user$ sudo docker build . -t tp-algo
 ```
 ---
 
-### Lancer le containeur avec un dossier paratagé :
+### Lancer le container avec un dossier paratagé :
 ```
 user@user$ sudo docker run -it --mount src=$(pwd)/workspace,target=/home/workspace,type=bind tp-algo
 ```
@@ -41,7 +41,7 @@ des fichiers de votre workspace depuis le conteneur (à cause des permissions).
 ### Supprimer le container :
 
 Quand vous n'avez plus besoin d'utiliser scip, zimpl...
-vous pouvez supprimer le containeur
+vous pouvez supprimer le container
 ```
 user@user$ sudo docker image rm -f tp-algo
 user@user$ sudo docker image rm -f ubuntu:20.04
