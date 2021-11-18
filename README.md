@@ -1,4 +1,4 @@
-# Comment installer un environnement de travail pour la programmation linéaire dans un containeur docker
+# Comment installer un environnement de travail pour la programmation linéaire dans un container docker
 
 ---
 
