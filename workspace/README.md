@@ -1,1 +1,1 @@
-mettre vos dossiers où fichiers dans ce repertoire
+Mettre vos dossiers ou fichiers dans ce repertoire
