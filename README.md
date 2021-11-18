@@ -23,6 +23,7 @@ Cloner ce repository avec la commande `git clone`
 
 ### Créer le containeur :
 ```
+user@user$ cd pl-dev
 user@user$ sudo docker build . -t tp-algo
 ```
 ---
