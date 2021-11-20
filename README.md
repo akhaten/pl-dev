@@ -34,7 +34,7 @@ user@user$ sudo docker run -it --mount src=$(pwd)/workspace,target=/home/workspa
 ```
 Le terminal est celui de ubuntu 20.04. Utilisez lecomme bon vous semble.
 La seule chose que vous ne pourrez pas faire c'est de créer ou de modifier 
-des fichiers de votre workspace depuis le conteneur (à cause des permissions).
+des fichiers de votre workspace depuis le contener (à cause des permissions).
 
 ---
 
@@ -46,7 +46,7 @@ vous pouvez supprimer le container
 user@user$ sudo docker image rm -f tp-algo
 user@user$ sudo docker image rm -f ubuntu:20.04
 ```
-Vous pouvez vérifier que la désinstallation s'est bien passé avec :
+Vous pouvez vérifier que la désinstallation s'est bien passée avec :
 ```sh
 user@user$ sudo docker image ls
 ```
