@@ -32,8 +32,8 @@ user@user$ sudo docker build . -t tp-algo
 ```
 user@user$ sudo docker run -it --mount src=$(pwd)/workspace,target=/home/workspace,type=bind tp-algo
 ```
-Le terminal est celui de ubuntu 20.04. Utilisez comme bon vous semble.
-La seule chose que vous ne pourrais pas faire c'est de créer ou de modifier 
+Le terminal est celui de ubuntu 20.04. Utilisez lecomme bon vous semble.
+La seule chose que vous ne pourrez pas faire c'est de créer ou de modifier 
 des fichiers de votre workspace depuis le conteneur (à cause des permissions).
 
 ---
