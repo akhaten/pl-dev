@@ -27,6 +27,7 @@ RUN apt-get update \
 #     && mkdir workspace \
 #     && chmod ugo+xrw workspace
 
-# RUN dpkg -i .devcontainer/SCIPOptSuite-7.0.3-Linux-ubuntu.deb
+ADD SCIPOptSuite-7.0.3-Linux-ubuntu.deb /home
+RUN dpkg -i /home/SCIPOptSuite-7.0.3-Linux-ubuntu.deb
 
 CMD "/bin/bash"
