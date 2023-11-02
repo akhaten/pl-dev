@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -yq \
 
 
 # # add scip installer inside container
-ADD SCIPOptSuite-7.0.3-Linux-ubuntu.deb /home
+ADD .devcontainer/SCIPOptSuite-7.0.3-Linux-ubuntu.deb /home
 RUN dpkg -i /home/SCIPOptSuite-7.0.3-Linux-ubuntu.deb
 
 # Create the gitpod user. UID must be 33333.
