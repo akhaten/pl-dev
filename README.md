@@ -1,6 +1,9 @@
 # Comment installer un environnement de travail pour la programmation linéaire dans un container docker ?
 
----
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/akhaten/pl-dev.git)
+
+<!-- ---
 
 ## Dependances :
 
@@ -49,4 +52,4 @@ user@user$ sudo docker image rm -f ubuntu:20.04
 Vous pouvez vérifier que la désinstallation s'est bien passée avec :
 ```sh
 user@user$ sudo docker image ls
-```
+``` -->
