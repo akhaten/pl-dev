@@ -14,10 +14,14 @@ RUN apt-get update \
     && dpkg -i libboost.deb \
     && rm libboost.deb
 
+
 # add scip installer inside container
 ADD SCIPOptSuite-7.0.3-Linux-ubuntu.deb /home
 RUN dpkg -i /home/SCIPOptSuite-7.0.3-Linux-ubuntu.deb
 
+# Create the gitpod user. UID must be 33333.
+RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod
+USER gitpod
 
 # install scip and remove installer
 # RUN cd /home \
