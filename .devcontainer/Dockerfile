@@ -14,9 +14,9 @@ RUN apt-get update \
     && dpkg -i libboost.deb \
     && rm libboost.deb
 
-# add scip installer inside container
-ADD SCIPOptSuite-7.0.3-Linux-ubuntu.deb /home
-RUN dpkg -i /home/SCIPOptSuite-7.0.3-Linux-ubuntu.deb
+# # add scip installer inside container
+# ADD SCIPOptSuite-7.0.3-Linux-ubuntu.deb /home
+# RUN dpkg -i /home/SCIPOptSuite-7.0.3-Linux-ubuntu.deb
 
 
 # install scip and remove installer
