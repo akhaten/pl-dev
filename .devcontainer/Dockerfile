@@ -14,17 +14,19 @@ RUN apt-get update \
     && dpkg -i libboost.deb \
     && rm libboost.deb
 
-# add scip installer inside container
-ADD SCIPOptSuite-7.0.3-Linux-ubuntu.deb /home
+# # add scip installer inside container
+# ADD SCIPOptSuite-7.0.3-Linux-ubuntu.deb /home
 
 
-# install scip and remove installer
-RUN cd /home \
-    && dpkg -i SCIPOptSuite-7.0.3-Linux-ubuntu.deb \
-    && rm SCIPOptSuite-7.0.3-Linux-ubuntu.deb
+# # install scip and remove installer
+# RUN cd /home \
+#     && dpkg -i SCIPOptSuite-7.0.3-Linux-ubuntu.deb \
+#     && rm SCIPOptSuite-7.0.3-Linux-ubuntu.deb
 
-RUN cd home \
-    && mkdir workspace \
-    && chmod ugo+xrw workspace
+# RUN cd home \
+#     && mkdir workspace \
+#     && chmod ugo+xrw workspace
 
-CMD ["/bin/bash"]
+# RUN dpkg -i .devcontainer/SCIPOptSuite-7.0.3-Linux-ubuntu.deb
+
+CMD "/bin/bash"
