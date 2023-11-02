@@ -1,8 +1,8 @@
-FROM ubuntu:20.04
+FROM ubuntu:latest
 
 # install compilers and scip deps
-RUN apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get -y install --no-install-recommends \
         build-essential \
         libgsl23 \
         libgfortran4 \
